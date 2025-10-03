@@ -1,7 +1,4 @@
 {
-  "name": "pdf-extraction-playground",
-  "version": 2,
-  "framework": "nextjs",
   "env": {
     "NEXT_PUBLIC_API_URL": "https://seaweed-boi--pdf-extraction-api-fastapi-app.modal.run",
     "NEXT_PUBLIC_API_BASE_URL": "https://seaweed-boi--pdf-extraction-api-fastapi-app.modal.run"
