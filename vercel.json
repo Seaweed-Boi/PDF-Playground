@@ -1,7 +1,6 @@
 {
-  "buildCommand": "cd frontend && npm run build",
-  "outputDirectory": "frontend/.next",
-  "installCommand": "cd frontend && npm install",
+  "name": "pdf-extraction-playground",
+  "version": 2,
   "framework": "nextjs",
   "env": {
     "NEXT_PUBLIC_API_URL": "https://seaweed-boi--pdf-extraction-api-fastapi-app.modal.run",
