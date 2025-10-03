@@ -1,3 +1,5 @@
+const path = require('path')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -19,6 +21,12 @@ const nextConfig = {
     serverComponentsExternalPackages: ['pdfjs-dist'],
   },
   webpack: (config, { isServer }) => {
+    // Handle TypeScript path aliases
+    config.resolve.alias = {
+      ...config.resolve.alias,
+      '@': path.resolve(__dirname, './src'),
+    }
+    
     // Handle PDF.js worker
     if (!isServer) {
       config.resolve.fallback = {
