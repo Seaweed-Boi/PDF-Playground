@@ -27,7 +27,6 @@
 - [Usage Guide](#usage-guide)
 - [Performance](#performance)
 - [Contributing](#contributing)
-- [License](#license)
 
 ---
 
@@ -208,25 +207,19 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-4. **Set up environment variables**
-```bash
-cp .env.example .env
-# Edit .env with your configuration
-```
-
-5. **Install Modal CLI**
+4. **Install Modal CLI**
 ```bash
 pip install modal
 modal setup
 ```
 
-6. **Run locally (development)**
+5. **Run locally (development)**
 ```bash
 # Start FastAPI server
 python -m uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 
-7. **Deploy to Modal (production)**
+6. **Deploy to Modal (production)**
 ```bash
 # Create Modal secret
 modal secret create pdf-extraction-secrets
@@ -581,17 +574,11 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## 📄 License
+##  Acknowledgments
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 🙏 Acknowledgments
-
-- [Docling](https://github.com/docling-project/docling) - Document understanding framework
+- [Docling](https://github.com/DS4SD/docling) - Document understanding framework
 - [MinerU](https://github.com/opendatalab/MinerU) - Scientific document extraction
-- [Surya](https://github.com/datalab-to/surya) - Multilingual OCR
+- [Surya](https://github.com/VikParuchuri/surya) - Multilingual OCR
 - [FastAPI](https://fastapi.tiangolo.com/) - Backend framework
 - [Next.js](https://nextjs.org/) - Frontend framework
 - [Modal](https://modal.com/) - Serverless deployment platform
@@ -624,25 +611,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📊 Live Demo
+##  Contact
 
-**🚀 Deploy instantly and test the application:**
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/Seaweed-Boi/PDF-Playground)
-
-*Your backend is already live on Modal - just deploy the frontend and start extracting!*
-
----
-
-## 📧 Contact
-
-**Harshil (Seaweed-Boi)**
+**Harsh (Seaweed-Boi)**
 - GitHub: [@Seaweed-Boi](https://github.com/Seaweed-Boi)
 - Repository: [PDF-Playground](https://github.com/Seaweed-Boi/PDF-Playground)
 
-For questions or technical discussions, please open an issue on GitHub.
 
----
 
 <div align="center">
 
